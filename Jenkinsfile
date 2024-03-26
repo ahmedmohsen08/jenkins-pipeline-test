@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         DOCKERFILE_PATH = './Dockerfile' // Path to your Dockerfile
-        DOCKER_IMAGE = 'pipeline'
+        DOCKER_IMAGE = 'pipelfgfg6ine'
     }
     
     stages {
