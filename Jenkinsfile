@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         DOCKERFILE_PATH = './Dockerfile' // Path to your Dockerfile
-        DOCKER_IMAGE = 'jenkins-pipeline-image'
+        DOCKER_IMAGE = 'pipeline'
     }
     
     stages {
