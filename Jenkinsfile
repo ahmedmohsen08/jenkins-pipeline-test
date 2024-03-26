@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your Spring Boot application source code from your version control system (e.g., Git)
-                git 'https://github.com/ahmedmohsen08/jenkins-pipeline-test.git'
+                git branch: 'main', url: 'https://github.com/ahmedmohsen08/jenkins-pipeline-test.git'
             }
         }
         
