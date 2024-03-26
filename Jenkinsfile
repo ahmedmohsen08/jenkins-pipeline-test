@@ -2,7 +2,6 @@ pipeline {
     agent any
     
     environment {
-        DOCKERFILE_PATH = './Dockerfile' // Path to your Dockerfile
         DOCKER_IMAGE = 'pipelfgfg6ine'
     }
     
@@ -25,7 +24,7 @@ pipeline {
             steps {
                 // Build Docker image from Dockerfile
                 script {
-                    docker.build("-f ${DOCKERFILE_PATH} -t ${DOCKER_IMAGE} .")
+                    docker.build("-t ${DOCKER_IMAGE} .")
                 }
             }
         }
