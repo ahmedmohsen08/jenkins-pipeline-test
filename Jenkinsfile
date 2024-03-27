@@ -24,7 +24,7 @@ pipeline {
             steps {
                 // Build Docker image from Dockerfile
                 script {
-                    docker.build("-t ${DOCKER_IMAGE} .")
+                    docker.build()
                 }
             }
         }
